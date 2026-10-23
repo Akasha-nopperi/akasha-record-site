@@ -92,23 +92,30 @@
 }
 
 
+
 /* WORK 02 : DOWNLOADABLE ASSETS */
 
 .assets-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 .assets-gallery .work {
+  display: block;
   width: 100%;
   min-width: 0;
+  padding: 0;
+  overflow: hidden;
   cursor: zoom-in;
   background: var(--bg);
+  aspect-ratio: auto;
 }
 
 .assets-gallery .work img {
+  display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
@@ -116,17 +123,27 @@
 }
 
 .assets-gallery .work > span {
+  display: block;
   padding: 12px;
+  text-align: left;
 }
 
 .assets-gallery .work b {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   overflow-wrap: anywhere;
 }
 
+/* スマートフォンでは2列表示 */
 @media (max-width: 760px) {
   .assets-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* 小さい画面では1列表示 */
+@media (max-width: 450px) {
+  .assets-gallery {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 }
