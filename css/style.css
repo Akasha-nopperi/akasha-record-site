@@ -330,3 +330,76 @@
   }
 }
 
+
+/* HOME : EIKA HERO VISUAL */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: clamp(20px, 4vw, 70px);
+  min-height: min(760px, calc(100svh - 80px));
+  padding: 50px clamp(24px, 7vw, 110px);
+  overflow: hidden;
+}
+
+/* 以前の円形装飾を削除 */
+.hero::after {
+  content: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.hero h1 {
+  font-size: clamp(64px, 8vw, 130px);
+  line-height: 0.95;
+  margin: 28px 0 20px;
+}
+
+.hero-visual {
+  width: 100%;
+  max-width: 480px;
+  height: min(680px, 75svh);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* タブレット・スマートフォン */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 70px 24px 40px;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(60px, 12vw, 100px);
+  }
+
+  .hero-visual {
+    max-width: 420px;
+    height: auto;
+    max-height: none;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+  }
+}
