@@ -147,3 +147,63 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* WORK 02 : FINAL SIZE FIX */
+
+.assets-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  margin: 24px 0;
+  align-items: start;
+}
+
+.assets-gallery .work {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 280px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  aspect-ratio: auto;
+}
+
+.assets-gallery .work img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.assets-gallery .work > span {
+  display: block;
+  padding: 12px;
+}
+
+@media (max-width: 760px) {
+  .assets-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .assets-gallery .work img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 450px) {
+  .assets-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .assets-gallery .work img {
+    height: 110px;
+  }
+}
