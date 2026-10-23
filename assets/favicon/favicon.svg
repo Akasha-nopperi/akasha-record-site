@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+<title id="title">Akasha RECORD — A and vinyl record</title>
+<rect width="128" height="128" rx="24" fill="#ffffff"/>
+<!-- vinyl disc -->
+<circle cx="48" cy="73" r="32" fill="#494349"/>
+<circle cx="48" cy="73" r="25" fill="none" stroke="#ffffff" stroke-opacity=".6" stroke-width="1.5"/>
+<circle cx="48" cy="73" r="19" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="1.5"/>
+<circle cx="48" cy="73" r="11" fill="#d8354e"/>
+<circle cx="48" cy="73" r="2.8" fill="#ffffff"/>
+<!-- bold geometric A, white negative counter -->
+<path d="M24 108 64 17 104 108H87L64 53 41 108Z" fill="#d8354e" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+<path d="M55 85H73L79 99H49Z" fill="#494349"/>
+<!-- orbit -->
+<path d="M16 105C33 119 105 93 114 72" fill="none" stroke="#d8354e" stroke-width="4" stroke-linecap="round"/>
+<!-- sparkle -->
+<path d="M102 26 105 34 113 37 105 40 102 48 99 40 91 37 99 34Z" fill="#494349"/>
+</svg>
