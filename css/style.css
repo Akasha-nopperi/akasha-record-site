@@ -31,3 +31,62 @@
   font-size: 0.85rem;
   letter-spacing: 0.15em;
 }
+
+
+/* WORKS CATEGORIES */
+
+.works-category {
+  margin-top: 3rem;
+}
+
+.works-category h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0.5rem 0;
+}
+
+.skeb-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.skeb-gallery .work {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  cursor: zoom-in;
+  aspect-ratio: 3 / 4;
+}
+
+.skeb-gallery .work img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skeb-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid #d8354e;
+  border-radius: 4px;
+  color: #d8354e;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.skeb-link:hover {
+  background: #d8354e;
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .skeb-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
