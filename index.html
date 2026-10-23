@@ -306,5 +306,27 @@
 </main>
   
 <footer><a href="#home">AKASHA RECORD ↑</a><span>© <span id="year"></span> Akasha RECORD</span></footer>
-<dialog id="lightbox" aria-label="画像の拡大表示"><button id="close-lightbox" aria-label="閉じる">×</button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+
+<!-- IMAGE VIEWER -->
+<dialog id="lightbox" aria-label="作品画像の拡大表示">
+  <div class="lightbox-header">
+    <span class="lightbox-brand">
+      AKASHA RECORD <span class="lightbox-accent">/ IMAGE VIEWER</span>
+    </span>
+
+    <button id="close-lightbox" type="button" aria-label="画像を閉じる">
+      <span aria-hidden="true">×</span> CLOSE
+    </button>
+  </div>
+
+  <div class="lightbox-body">
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <div class="lightbox-footer">
+    <p id="lightbox-caption"></p>
+    <span class="lightbox-note">© Akasha RECORD</span>
+  </div>
+</dialog>
+
 </body></html>
