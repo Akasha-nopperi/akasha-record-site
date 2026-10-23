@@ -535,3 +535,44 @@
     display: none;
   }
 }
+
+
+/* LINK : SERVICE ICONS */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.social-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.social-name img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.social-name b {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.social > span {
+  padding-left: 36px;
+  font-size: 11px;
+}
+
+.social:hover .social-name b {
+  color: var(--accent);
+}
